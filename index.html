@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<body>
+    <div class="main-wrapper">
+   <div class="container">
+<div class="navbar" id="mySidebar"> 
+  <div class="bar-item">LOGO
+    <a href="javascript:void(0)" class="bar-item-button" onclick="open()"><i class="fa fa-bars "></i></a>
+    
+  </div>
+
+ </div>
+<div class="sidebar">
+<div class="logo">
+    <i onclick="close()" class="fa fa-remove hide-topright"></i>
+     <h3 class="logo-bar">
+        <b>LOGO</b>
+    </h3>
+ </div>
+<div class="items-div">
+        <a href="#" class="anchor-button ">Shirts</a>
+        <a href="#" class="anchor-button ">Dresses</a>
+        <a onclick="myAccFunc()" href="javascript:void(0)" class="button-block " id="myBtn">
+          Jeans <i class="fa fa-caret-down"></i>
+        </a>
+        
+
+        <div id="myBtn1" class="block-bar-show">
+          <a href="#" class="gray-anchor-button"><i class="fa fa-caret-right margin-right"></i>Skinny</a>
+          <a href="#" class="anchor-button1 ">Relaxed</a>
+          <a href="#" class="anchor-button1 ">Bootcut</a>
+           <a href="#" class="anchor-button1 ">Straight</a>
+        </div>
+        <a href="#" class="anchor-button ">Jackets</a>
+        <a href="#" class="anchor-button ">Gymwear</a>
+         <a href="#" class="anchor-button ">Blazers</a>
+         <a href="#" class="anchor-button ">Shoes</a>
+      </div>
+      <a href="#footer" class="contact-button ">Contact</a>
+      <a href="javascript:void(0)" class="bar-button" onclick= "document.getElementById('newsletter').style.visibility='visible'">Newsletter</a>
+      <a href="#footer" class="contact-button">Subscribe</a>
+ </div>
+<div class="description">
+                 
+    <header class="logo-container">
+         <p class="left">Jeans</p>
+         <p class="right">
+           <i class="fa fa-shopping-cart margin-right"></i>
+          <i class="fa fa-search"></i>
+        </p>
+      </header>
+      <img src="images/jeans.jpg" alt="Jeans" style="width:100%">
+      <div class="image-heading">
+         <h1 class="jumboo-small">New arrivals</h1>
+         <h1 class="hide-small">COLLECTION 2021</h1>
+         <P>
+          <a href="#jeans" class="black-button ">SHOP NOW</a>
+         </P>
+       </div>
+      <div class="gray-container " id="jeans">
+        <p class="items-class">8 items</p>
+        <div class="jeans-images">
+           <div class="jeans-wraper">
+            <div class="img-container">
+              <img  class=" rappid-jeans" src="images/jeans1.jpg" style="width:100%">
+              <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+            </div>
+            <div class="img-container">
+           <img src="images/jeans2.jpg" style="width:100%">
+           <!-- <span class= "display-topleft">New</span> -->
+           <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+               </div>
+           </div>
+           <div class="jeans-wraper">
+            <div class="img-container">
+              <img  class=" rappid-jeans" src="images/jeans3.jpg" style="width:100%">
+              <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+            </div>
+            <div class="img-container">
+           <img src="images/jeans4.jpg" style="width:100%">
+           <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+               </div>
+           </div>
+           <div class="jeans-wraper">
+            <div class="img-container">
+              <img  class=" rappid-jeans" src="images/jeans2.jpg" style="width:100%">
+              <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+            </div>
+            <div class="img-container">
+           <img src="images/jeans3.jpg" style="width:100%">
+           <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+               </div>
+           </div>
+           <div class="jeans-wraper">
+            <div class="img-container">
+              <img  class=" rappid-jeans" src="images/jeans4.jpg" style="width:100%">
+              <!-- <span class="display-topleft2">Sale</span> -->
+              <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+     
+            </div>
+            <div class="img-container">
+           <img src="images/jeans1.jpg" style="width:100%">
+           <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+               </div>
+           </div>
+        </div>
+        <div class="black-container">
+          <h1>Subscribe</h1>
+          <p>To get special offers and VIP treatment:</p>
+          <p class=""><input class="input-border" type="text" placeholder="Enter e-mail"></p>
+          <button type="button" class="bottom-button">Subscribe</button>
+        </div>
+   </div>
+   <footer class="footer" id="footer">
+    <div class="footer-wraper">
+      <div class="contact-wraper">
+        <h4 class="h4">Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="contact-box" type="text" placeholder="Name" name="Name" required=""></p>
+          <p><input class="contact-box" type="text" placeholder="Email" name="Email" required=""></p>
+          <p><input class="contact-box" type="text" placeholder="Subject" name="Subject" required=""></p>
+          <p><input class="contact-box" type="text" placeholder="Message" name="Message" required=""></p>
+          <button type="submit" class="black-block-button" style="background-color:black;" >Send  </button>
+        </form>
+      </div>
+
+      <div class="about-wraper">
+        <h4 class="h4">About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="store-container">
+        <h4 class="h4">Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4 class="h4">We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook official hover-opacity large"></i>
+        <i class="fa fa-instagram hover-opacity large"></i>
+        <i class="fa fa-snapchat hover-opacity large"></i>
+        <i class="fa fa-pinterest p hover-opacity large"></i>
+        <i class="fa fa-twitter hover-opacity large"></i>
+        <i class="fa fa-linkedin hover-opacity large"></i>
+      </div>
+    </div>
+  </footer>    
+  <div class="black-footer">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-opacity">w3.css</a></div>
+   </div> 
+   <div id="newsletter" class="modal">
+    <div class="modal-content animation-popup" style="padding:32px">
+      <div class=" white-container ">
+        <div class="header-font">
+        <h2 class="wide-h2">NEWSLETTER</h2>
+        <i onclick="document.getElementById('newsletter').style.visibility='hidden'" class="fa fa-remove xxlarge"></i>
+      </div>
+        <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+        <p><input class="input-border" type="text" placeholder="Enter e-mail"></p>
+        <button type="button" class="Subscribe-button" onclick="document.getElementById('newsletter').style.visibility='visible'">Subscribe</button>
+      </div>
+    </div>
+  </div>
+<script>
+var myBtn = document.getElementById("myBtn");
+// var myBtn = document.getElementById("jeans");
+console.log("MY", myBtn)
+
+myBtn.onclick = function(){
+  console.log("jeans")
+  if(myBtn1.className == "block-bar-show"){
+    //shrink the box
+    myBtn1.className = "hide";
+    // myBtn.innerHTML = "";
+
+  } else{
+    //expand the box
+    myBtn1.className= "block-bar-show" ;
+    // myBtn1.innerHTML = "";
+  
+
+  }
+}
+</script>
+  </body>
+  </html>
